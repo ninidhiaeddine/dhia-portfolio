@@ -9,7 +9,7 @@ import Contact from './Pages/Contact';
 import Education from './Pages/Education';
 import Experience from './Pages/Experience';
 import Projects from './Pages/Projects';
-import Art from './Pages/Art';
+import Skills from './Pages/Skills';
 
 const router = createBrowserRouter([
   {
