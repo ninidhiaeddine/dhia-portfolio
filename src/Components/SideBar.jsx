@@ -10,13 +10,13 @@ import SideBarItem from './SideBarItem';
 export default function SideBar() {
     return (
         <div className="fixed flex flex-col top-15 left-0 text-white">
-            <SideBarItem icon={HomeIcon} text="Home" />
-            <SideBarItem icon={BuildIcon} text="Skills" />
-            <SideBarItem icon={SchoolIcon} text="Education" />
-            <SideBarItem icon={WorkIcon} text="Experience" />
-            <SideBarItem icon={AccountTreeIcon} text="Projects" />
-            <SideBarItem icon={MusicNoteIcon} text="Art" />
-            <SideBarItem icon={EmailIcon} text="Contact Me" />
+            <SideBarItem icon={HomeIcon} text="Home" linkTo='/' />
+            <SideBarItem icon={BuildIcon} text="Skills" linkTo='/Skills' />
+            <SideBarItem icon={SchoolIcon} text="Education" linkTo='/Education' />
+            <SideBarItem icon={WorkIcon} text="Experience" linkTo='/Experience' />
+            <SideBarItem icon={AccountTreeIcon} text="Projects" linkTo='/Projects' />
+            <SideBarItem icon={MusicNoteIcon} text="Art" linkTo='/Art' />
+            <SideBarItem icon={EmailIcon} text="Contact Me" linkTo='/Contact' />
         </div>
     );
 }

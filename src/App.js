@@ -2,6 +2,7 @@ import './App.css';
 import {
   createBrowserRouter,
   RouterProvider,
+  BrowserRouter,
 } from "react-router-dom";
 import Home from './Pages/Home';
 import Art from './Pages/Art';
@@ -46,8 +47,8 @@ const router = createBrowserRouter([
 
 function App() {
   return (<>
-    <Topbar/>
-    <SideBar/>
+    <BrowserRouter><Topbar/></BrowserRouter>
+    <BrowserRouter><SideBar/></BrowserRouter>
     <RouterProvider router={router} />
   </>
   );
