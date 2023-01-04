@@ -3,6 +3,9 @@ module.exports = {
   mode: 'jit',
   content: ["./src/**/*.{js,jsx}"],
   theme: {
+    fontFamily: {
+      
+    },
     colors: {
       'primary': '#7C4DFF',
       'secondary': '#00838F',
