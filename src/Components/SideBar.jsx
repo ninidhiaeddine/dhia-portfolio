@@ -9,7 +9,7 @@ import SideBarItem from './SideBarItem';
 
 export default function SideBar() {
     return (
-        <div className="fixed flex flex-col top-0 left-0 h-screen w-50 text-white">
+        <div className="fixed flex flex-col top-0 left-0 h-screen text-white">
             <SideBarItem icon={HomeIcon} text="Home" />
             <SideBarItem icon={BuildIcon} text="Skills" />
             <SideBarItem icon={SchoolIcon} text="Education" />
