@@ -1,9 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function SideBarItem({icon, text, linkTo}) {
+export default function SideBarItem({Icon, text, linkTo}) {
     const [isHovered, setIsHovered] = useState(false);
-    const ItemIcon = icon;
 
     const navigate = useNavigate();
 
@@ -14,7 +13,7 @@ export default function SideBarItem({icon, text, linkTo}) {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onClick={() => navigate(linkTo)}>
-            <ItemIcon sx={{
+            <Icon sx={{
                 color: 'white',
                 fontSize: 22,
                 margin: 2
@@ -25,7 +24,6 @@ export default function SideBarItem({icon, text, linkTo}) {
                         {text}
                     </div>
             }
-            
         </div>
     );
 }

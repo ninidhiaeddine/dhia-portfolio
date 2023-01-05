@@ -4,7 +4,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     fontFamily: {
-      
+      'ubuntu': ['Ubuntu', 'sans-serif'],
     },
     colors: {
       'primary': '#7C4DFF',
@@ -14,6 +14,7 @@ module.exports = {
       'orange': '#FF6F00',
       'white': '#FFF',
       'black': '#000',
+      'background': '#212022',
     },
     extend: {
       transitionDuration: {

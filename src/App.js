@@ -12,7 +12,9 @@ import Experience from './Pages/Experience';
 import Projects from './Pages/Projects';
 import Skills from './Pages/Skills';
 import SideBar from './Components/SideBar';
-import Topbar from './Components/Topbar';
+import TopBar from './Components/TopBar';
+import React from 'react';
+import Grid from "@mui/material/Grid";
 
 const router = createBrowserRouter([
   {
@@ -47,9 +49,16 @@ const router = createBrowserRouter([
 
 function App() {
   return (<>
-    <BrowserRouter><Topbar/></BrowserRouter>
-    <BrowserRouter><SideBar/></BrowserRouter>
-    <RouterProvider router={router} />
+    <BrowserRouter><TopBar /></BrowserRouter>
+
+    <Grid container>
+      <Grid item xs={2}>
+        <BrowserRouter><SideBar /></BrowserRouter>
+      </Grid>
+      <Grid item xs={10}>
+        <RouterProvider router={router} />
+      </Grid>
+    </Grid>
   </>
   );
 }
