@@ -9,7 +9,8 @@ export default function SideBarItem({Icon, text, linkTo}) {
     return (
         <div className={`flex items-center border border-white text-white rounded-full m-2 w-14 h-14 text-center 
             hover:w-36 hover:scale-105 hover:bg-primary hover:border-none
-            transition-all duration-200`}
+            transition-all duration-200
+            animate-pulse hover:animate-none`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onClick={() => navigate(linkTo)}>

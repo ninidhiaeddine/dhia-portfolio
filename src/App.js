@@ -15,6 +15,8 @@ import SideBar from './Components/SideBar';
 import TopBar from './Components/TopBar';
 import React from 'react';
 import Grid from "@mui/material/Grid";
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
 const router = createBrowserRouter([
   {
@@ -47,19 +49,38 @@ const router = createBrowserRouter([
   },
 ]);
 
-function App() {
-  return (<>
-    <BrowserRouter><TopBar /></BrowserRouter>
+let darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+    background: {
+      default: '#212022',
+    },
+    primary: {
+      main: '#7C4DFF',
+    },
+    typography: {
+      fontFamily: ['Ubuntu'],
+    },
+  },
+});
 
-    <Grid container>
-      <Grid item xs={2}>
-        <BrowserRouter><SideBar /></BrowserRouter>
+function App() {
+  return (
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline/>
+
+      <BrowserRouter><TopBar /></BrowserRouter>
+
+      <Grid container>
+        <Grid item xs={1}>
+          <BrowserRouter><SideBar /></BrowserRouter>
+        </Grid>
+
+        <Grid item xs={11}>
+          <RouterProvider router={router} />
+        </Grid>
       </Grid>
-      <Grid item xs={10}>
-        <RouterProvider router={router} />
-      </Grid>
-    </Grid>
-  </>
+    </ThemeProvider>
   );
 }
 
