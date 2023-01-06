@@ -72,11 +72,11 @@ function App() {
       <BrowserRouter><TopBar /></BrowserRouter>
 
       <Grid container>
-        <Grid item xs={1}>
+        <Grid item xs={2}>
           <BrowserRouter><SideBar /></BrowserRouter>
         </Grid>
 
-        <Grid item xs={11}>
+        <Grid item xs={10}>
           <RouterProvider router={router} />
         </Grid>
       </Grid>
