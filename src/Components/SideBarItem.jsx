@@ -13,7 +13,10 @@ export default function SideBarItem({Icon, text, linkTo}) {
             animate-pulse hover:animate-none`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            onClick={() => navigate(linkTo)}>
+            onClick={() => {
+                navigate(linkTo); 
+                navigate(0)
+                }}>
             <Icon sx={{
                 color: 'white',
                 fontSize: 22,
