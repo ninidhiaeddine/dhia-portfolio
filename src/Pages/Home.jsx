@@ -2,7 +2,7 @@ import React from "react";
 import SocialMediaBar from "../Components/SocialMediaBar";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
-import Dhia from "./Images/Dhia.png";
+import DhiaHero from "./Images/DhiaHero.png";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
                     </div>
             </Grid>
             <Grid item xs={12} md={4}>
-                <img src={Dhia} className="grayscale float-right"/>
+                <img src={DhiaHero} className="grayscale float-right"/>
             </Grid>
         </Grid>
     );
