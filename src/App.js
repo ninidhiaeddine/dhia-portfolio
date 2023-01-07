@@ -84,14 +84,13 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
 
-      <BrowserRouter><TopBar /></BrowserRouter>
-
       <Grid container>
-        <Grid item xs={2}>
+        <Grid item xs={1}>
           <BrowserRouter><SideBar /></BrowserRouter>
         </Grid>
 
-        <Grid item xs={10}>
+        <Grid item xs={11}>
+          <BrowserRouter><TopBar /></BrowserRouter>
           <RouterProvider router={router} />
         </Grid>
       </Grid>
