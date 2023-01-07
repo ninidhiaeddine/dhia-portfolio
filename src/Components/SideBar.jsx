@@ -10,7 +10,7 @@ import React from 'react';
 
 export default function SideBar() {
     return (
-        <div className="fixed flex flex-col top-15 left-0 text-white">
+        <div className="fixed flex flex-col top-12 left-0 text-white">
             <SideBarItem Icon={HomeIcon} text="Home" linkTo='/' />
             <SideBarItem Icon={BuildIcon} text="Skills" linkTo='/Skills' />
             <SideBarItem Icon={SchoolIcon} text="Education" linkTo='/Education' />
