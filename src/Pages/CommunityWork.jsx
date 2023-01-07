@@ -10,10 +10,11 @@ import SosLogo from './Images/SosLogo.png';
 import SeLogo from './Images/SELogo.png';
 import TedLogo from './Images/TedLogo.png';
 import SpiritOfYouthLogo from './Images/SpiritOfYouthLogo.png';
+import DashedLine from "../Components/DashedLine";
 
 export default function CommunityWork() {
     return (
-        <div className="bg-secondary mt-10 pb-10">
+        <div className="bg-secondary mt-10 pb-10 relative">
             <div className="text-tertiary font-bold text-5xl pt-8 text-center">Community Work & Volunteering</div>
 
             { /* 2022 Community Work */}
@@ -57,8 +58,8 @@ export default function CommunityWork() {
                     title="English Courses Instructor"
                     timeRangeString="Fall 2020"
                     locationString="Remote"
-                    companyName="Jafra Foundation"
-                    imgSrc={JafraLogo}
+                    companyName="SE Factory"
+                    imgSrc={SeLogo}
                     description=""/>
             </Stack>
 
@@ -82,6 +83,40 @@ export default function CommunityWork() {
             </Stack>
             </div>
 
+            { /* vertical dashed lines */ }
+            <div className="absolute top-[10rem] left-[10rem]">
+                <DashedLine length={1470}/>
+            </div>
+
+            { /* horizontal dashed lines */ }
+            <div className="absolute top-[19rem] left-[10rem]">
+                <DashedLine length={160} isVertical={false} />
+                <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+            </div>
+            <div className="absolute top-[30rem] left-[10rem]">
+                <DashedLine length={160} isVertical={false} />
+                <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+            </div>
+            <div className="absolute top-[42rem] left-[10rem]">
+                <DashedLine length={160} isVertical={false} />
+                <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+            </div>
+            <div className="absolute top-[52rem] left-[10rem]">
+                <DashedLine length={160} isVertical={false} />
+                <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+            </div>
+            <div className="absolute top-[69rem] left-[10rem]">
+                <DashedLine length={160} isVertical={false} />
+                <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+            </div>
+            <div className="absolute top-[86rem] left-[10rem]">
+                <DashedLine length={160} isVertical={false} />
+                <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+            </div>
+            <div className="absolute top-[96rem] left-[10rem]">
+                <DashedLine length={160} isVertical={false} />
+                <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+            </div>
         </div>
     );
 }
