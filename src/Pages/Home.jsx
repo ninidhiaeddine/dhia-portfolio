@@ -35,7 +35,7 @@ export default function Home() {
                     </div>
             </Grid>
             <Grid item xs={12} md={4}>
-                <img src={DhiaHero} className="grayscale float-right"/>
+                <img src={DhiaHero} alt="Dhia's Picture" className="grayscale float-right"/>
             </Grid>
         </Grid>
     );

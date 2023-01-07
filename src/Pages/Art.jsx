@@ -1,7 +1,8 @@
 import SoloPic from './Images/ArtSoloPic.jpg';
 import GroupPic from './Images/ArtGroupPic.jpg';
 import { useNavigate } from 'react-router-dom';
-import Stack from '@mui/material/Stack';
+import SocialMediaLink from '../Components/SocialMediaLink';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function Art() {
     const navigate = useNavigate();
@@ -36,7 +37,14 @@ export default function Art() {
                 <div className='bg-secondary mt-10 pb-5'>
                     <div className='text-2xl text-center text-tertiary font-bold p-4'>Piano Covers</div>
                     <div className='flex flex-col items-center'>
-                        You can find them on my Instagram Reels section!
+                        <div className='flex'>
+                            <p>You can find them on my</p>
+                            <div className='pl-2 pr-2'>
+                                <SocialMediaLink Icon={InstagramIcon} linkTo="https://www.instagram.com/" />
+                            </div>
+                            <p><b>Reels</b> section!</p>
+                        </div>
+
                         <a href="https://www.instagram.com/dhia.eddine.n/reels/" target="_blank" rel="noreferrer">
                             <button className="w-[15rem] mt-5 bg-tertiary text-black py-2 px-4 border border-tertiary
             hover:text-tertiary hover:border-tertiary hover:bg-background rounded hover:scale-110
