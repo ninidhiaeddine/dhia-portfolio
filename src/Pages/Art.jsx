@@ -1,12 +1,9 @@
 import SoloPic from './Images/ArtSoloPic.jpg';
 import GroupPic from './Images/ArtGroupPic.jpg';
-import { useNavigate } from 'react-router-dom';
 import SocialMediaLink from '../Components/SocialMediaLink';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function Art() {
-    const navigate = useNavigate();
-
     return (
         <>
             <div className="text-primary font-bold text-5xl pt-8 text-center">Art</div>
