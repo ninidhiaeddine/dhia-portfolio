@@ -6,9 +6,7 @@ import WebIcon from '@mui/icons-material/Web';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import WebTabView from '../Components/TabViews/WebTabView';
-import MobileTabView from '../Components/TabViews/MobileTabView';
-import GameTabView from '../Components/TabViews/GameTabView';
+import TabView from '../Components/TabView';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
@@ -47,13 +45,13 @@ export default function ProjectsTabs() {
                 </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
-                <MobileTabView />
+                <TabView typeFilter="mobile" />
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <WebTabView />
+                <TabView typeFilter="web" />
             </TabPanel>
             <TabPanel value={value} index={2}>
-                <GameTabView />
+                <TabView typeFilter="game" />
             </TabPanel>
         </Box >
     );
