@@ -13,45 +13,85 @@ const Alert = forwardRef(function Alert(props, ref) {
 });
 
 export default function Contact() {
-    const [fullName, setFullName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const initialState = {
+        fullName: "",
+        email: "",
+        message: ""
+    };
 
+    const regexPatterns = {
+        fullName: /^[a-zA-Z ]{3,}$/,
+        email: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
+        message: /^[a-zA-Z0-9 ]{5,}$/,
+    }
+
+    const [input, setInput] = useState(initialState);
+
+    const [validation, setValidation] = useState({
+        fullName: true,
+        email: true,
+        message: true
+    });
+
+    // snackbars and backdrop open states:
     const [successOpen, setSuccessOpen] = useState(false);
     const [errorOpen, setErrorOpen] = useState(false);
     const [backdropOpen, setBackdropOpen] = useState(false);
 
+    const handleChange = (e) => {
+
+        setInput((oldState) => {
+            return { ...oldState, [e.target.name]: e.target.value }
+        })
+        
+        let targetRegex = regexPatterns[e.target.name];
+        let targetString = String(input[e.target.name]);
+
+        setValidation({
+            ...validation,
+            [e.target.name]: targetRegex.test(targetString),
+        })
+    }
+
+    // function validateForm() {
+    //     setValidation({
+    //         fullName: input.fullName.length > 0,
+    //         email: input.email.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/) != null,
+    //         message: input.message.length > 0
+    //     })
+    // }
+
     function resetForm() {
-        setFullName('');
-        setEmail('');
-        setMessage('');
+        setInput(initialState);
+    }
+
+    function formIsValid() {
+        console.log(validation);
+        return validation.fullName && validation.email && validation.message;
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // prepare email body:
-        const body = {
-            fullName,
-            email,
-            message
+        if (formIsValid() === false) {
+            return;
         }
 
         // open backdrop:
         setBackdropOpen(true);
-
-        // send email:
-        emailjs.send(process.env.REACT_APP_SERVICE_ID,
-            process.env.REACT_APP_TEMPLATE_ID,
-            body, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
-            .then((result) => {
-                setSuccessOpen(true);
-                resetForm();
-                setBackdropOpen(false);
-            }, (error) => {
-                setErrorOpen(true);
-                setBackdropOpen(false);
-            });
+        /*
+            // send email:
+            emailjs.send(process.env.REACT_APP_SERVICE_ID,
+                process.env.REACT_APP_TEMPLATE_ID,
+                input, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+                .then((result) => {
+                    setSuccessOpen(true);
+                    resetForm();
+                    setBackdropOpen(false);
+                }, (error) => {
+                    setErrorOpen(true);
+                    setBackdropOpen(false);
+                });*/
     }
 
     return (
@@ -60,18 +100,28 @@ export default function Contact() {
             <div className="text-white text-xl pt-6 w-[22rem] m-auto">Got a question, proposal, or just want to say Hi? Go ahead!</div>
             <form onSubmit={handleSubmit}>
                 <Stack spacing={2} sx={{ margin: 'auto', paddingTop: 2, width: 400 }}>
-                    <TextField label="Full Name" variant="filled" type="text" value={fullName}
-                        onChange={(event) => setFullName(event.target.value)} />
-                    <TextField label="Email Address" variant="filled" type='email' value={email}
-                        onChange={(event) => setEmail(event.target.value)} />
+                    <TextField label="Full Name" variant="filled" type="text" value={input.fullName} name="fullName"
+                        onChange={handleChange}
+                        error={!validation.fullName}
+                        helperText={!validation.fullName && "Invalid Full Name."} />
+
+                    <TextField label="Email Address" variant="filled" type='email' value={input.email} name="email"
+                        error={!validation.email}
+                        helperText={!validation.email && "Invalid Email Address."}
+                        onChange={handleChange}
+
+                    />
                     <TextField
+                        error={!validation.message}
+                        helperText={!validation.message && "Message must not be empty."}
                         label="Message"
                         type='text'
                         multiline
                         rows={4}
                         variant="filled"
-                        value={message}
-                        onChange={(event) => setMessage(event.target.value)}
+                        value={input.message}
+                        onChange={handleChange}
+                        name="message"
                     />
 
                     <button className="bg-background text-primary py-2 px-4 mt-5 w-[25rem] border border-primary rounded 
