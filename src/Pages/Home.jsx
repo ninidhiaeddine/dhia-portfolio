@@ -23,11 +23,15 @@ export default function Home() {
                             onClick={() => navigate('/Contact')}>
                             Contact Me
                         </button>
+                        <a href="https://rxresu.me/ninidhia/dhia-eddine-nini" 
+                        target="_blank" 
+                        rel="noopener noreferrer"> 
                         <button className="bg-background text-primary py-2 px-4 border border-primary rounded 
         hover:bg-primary hover:text-white hover:border-transparent hover:scale-110
         transition ease-in-out">
                             Resume
                         </button>
+                        </a>                        
                     </Stack>
 
 
