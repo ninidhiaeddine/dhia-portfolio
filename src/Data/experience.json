@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Mobile Developer Intern",
+        "timeRange": "Winter 2023",
+        "location": "Beirut, Lebanon",
+        "company": "SAID NGO",
+        "imgSrc": "~/src/Pages/Images/SaidNgoLogo.png",
+        "description": "N/A"
+    },
+    {
+        "title": "Game Developer Intern",
+        "timeRange": "Summer 2022",
+        "location": "Beirut, Lebanon",
+        "company": "Video Game Studio (VGS)",
+        "imgSrc": "~/src/Pages/Images/VgsLogo.jpg",
+        "description": "N/A"
+    }
+]
