@@ -1,3 +1,6 @@
+import React from 'react';
+
+// import icons:
 import HomeIcon from '@mui/icons-material/Home';
 import BuildIcon from '@mui/icons-material/Build';
 import SchoolIcon from '@mui/icons-material/School';
@@ -5,19 +8,24 @@ import WorkIcon from '@mui/icons-material/Work';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import EmailIcon from '@mui/icons-material/Email';
+
+// import components:
 import SideBarItem from './SideBarItem';
-import React from 'react';
+
+// import sounds:
+import PianoAudio from '../Audio/mixkit-greeting-music-box-tone-699.wav';
+import ChordAudio from '../Audio/mixkit-chord-swell-short-692.wav';
 
 export default function SideBar() {
     return (
         <div className="fixed flex flex-col top-12 left-0 text-white">
-            <SideBarItem Icon={HomeIcon} text="Home" linkTo='/' />
-            <SideBarItem Icon={BuildIcon} text="Skills" linkTo='/Skills' />
-            <SideBarItem Icon={SchoolIcon} text="Education" linkTo='/Education' />
-            <SideBarItem Icon={WorkIcon} text="Experience" linkTo='/Experience' />
-            <SideBarItem Icon={AccountTreeIcon} text="Projects" linkTo='/Projects' />
-            <SideBarItem Icon={MusicNoteIcon} text="Art" linkTo='/Art' />
-            <SideBarItem Icon={EmailIcon} text="Contact Me" linkTo='/Contact' />
+            <SideBarItem Icon={HomeIcon} text="Home" linkTo='/' audio={ChordAudio} />
+            <SideBarItem Icon={BuildIcon} text="Skills" linkTo='Skills' audio={ChordAudio} />
+            <SideBarItem Icon={SchoolIcon} text="Education" linkTo='Education' audio={ChordAudio} />
+            <SideBarItem Icon={WorkIcon} text="Experience" linkTo='Experience' audio={ChordAudio}/>
+            <SideBarItem Icon={AccountTreeIcon} text="Projects" linkTo='Projects' audio={ChordAudio} />
+            <SideBarItem Icon={MusicNoteIcon} text="Art" linkTo='Art' audio={PianoAudio}/>
+            <SideBarItem Icon={EmailIcon} text="Contact Me" linkTo='Contact' audio={ChordAudio} />
         </div>
     );
 }

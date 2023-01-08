@@ -21,32 +21,32 @@ import Ubuntu from './Fonts/Ubuntu/Ubuntu-Regular.ttf';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/Art",
+    path: "Art",
     element: <Art />,
   },
   {
-    path: "/Contact",
+    path: "Contact",
     element: <Contact />,
   },
   {
-    path: "/Education",
+    path: "Education",
     element: <Education />,
   },
   {
-    path: "/Experience",
+    path: "Experience",
     element: <Experience />,
   },
   {
-    path: "/Projects",
+    path: "Projects",
     element: <Projects />,
   },
   {
-    path: "/Skills",
+    path: "Skills",
     element: <Skills />,
+  },
+  {
+    path: "/",
+    element: <Home />,
   },
 ]);
 

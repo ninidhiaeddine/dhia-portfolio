@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
-export default function SideBarItem({Icon, text, linkTo}) {
+export default function SideBarItem({Icon, text, linkTo, audio}) {
     const [isHovered, setIsHovered] = useState(false);
 
     const navigate = useNavigate();
+
+    function playAudio() {
+        new Audio(audio).play();
+    }
 
     return (
         <div className={`flex items-center border border-white text-white rounded-full m-2 w-14 h-14 text-center 
@@ -15,8 +19,8 @@ export default function SideBarItem({Icon, text, linkTo}) {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             onClick={() => {
-                navigate(linkTo); 
-                navigate(0)
+                navigate(linkTo);
+                playAudio();
                 }}>
             <Icon sx={{
                 color: 'white',
