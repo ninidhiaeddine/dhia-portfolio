@@ -20,36 +20,36 @@ export default function CommunityWork() {
 
             { /* vertical dashed lines */ }
             <div className="absolute top-[10rem] left-[10rem] hidden lg:block">
-                <DashedLine length={1830}/>
+                <DashedLine length={2250}/>
             </div>
 
             { /* horizontal dashed lines */ }
-            <div className="absolute top-[19rem] left-[10rem] hidden lg:block">
+            <div className="absolute top-[22rem] left-[10rem] hidden lg:block">
                 <DashedLine length={160} isVertical={false} />
                 <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
             </div>
             
-            <div className="absolute top-[40rem] left-[10rem] hidden lg:block">
+            <div className="absolute top-[47rem] left-[10rem] hidden lg:block">
                 <DashedLine length={160} isVertical={false} />
                 <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
             </div>
-            <div className="absolute top-[53rem] left-[10rem] hidden lg:block">
+            <div className="absolute top-[62rem] left-[10rem] hidden lg:block">
                 <DashedLine length={160} isVertical={false} />
                 <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
             </div>
-            <div className="absolute top-[65rem] left-[10rem] hidden lg:block">
+            <div className="absolute top-[79rem] left-[10rem] hidden lg:block">
                 <DashedLine length={160} isVertical={false} />
                 <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
             </div>
-            <div className="absolute top-[86rem] left-[10rem] hidden lg:block">
+            <div className="absolute top-[103rem] left-[10rem] hidden lg:block">
                 <DashedLine length={160} isVertical={false} />
                 <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
             </div>
-            <div className="absolute top-[107rem] left-[10rem] hidden lg:block">
+            <div className="absolute top-[127rem] left-[10rem] hidden lg:block">
                 <DashedLine length={160} isVertical={false} />
                 <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
             </div>
-            <div className="absolute top-[120rem] left-[10rem] hidden lg:block">
+            <div className="absolute top-[145rem] left-[10rem] hidden lg:block">
                 <DashedLine length={160} isVertical={false} />
                 <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
             </div>

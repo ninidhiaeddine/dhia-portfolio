@@ -17,7 +17,7 @@ export default function ExperienceCard({title, timeRangeString, locationString, 
                     <div>{companyName}</div>                    
                 </Stack>
             </Stack>
-            <div className="mt-5">{description}</div>
+            <div className="mt-5 text-justify text-sm">{description}</div>
         </div>
     );
 }

@@ -20,6 +20,7 @@ export default function SideBarItem({Icon, text, linkTo, audio}) {
             onMouseLeave={() => setIsHovered(false)}
             onClick={() => {
                 navigate(linkTo);
+                navigate(0);
                 playAudio();
                 }}>
             <Icon sx={{

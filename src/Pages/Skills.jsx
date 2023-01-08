@@ -16,6 +16,7 @@ import {
     SiBootstrap,
     SiMaterialdesign,
     SiFirebase,
+    SiFlutter,
 } from 'react-icons/si';
 import { FaReact, FaDatabase, FaGithub } from 'react-icons/fa';
 import { AiFillHtml5 } from 'react-icons/ai';
@@ -41,7 +42,8 @@ export default function Skills() {
         IconJson,
         IconApi,
         DiAndroid,
-        IconVolley];
+        IconVolley,
+        SiFlutter];
     const gameSkillsIcons = [SiUnity];
     const generalSkillsIcons = [
         SiMysql,
@@ -60,21 +62,21 @@ export default function Skills() {
     return (
         <>
             <div className="text-primary font-bold text-5xl pt-8 text-center">Skills</div>
-            <div className="m-20 mt-14">
+            <div className="lg:m-20 m-10 mt-14">
                 <Grid container columnSpacing={2} rowSpacing={4} >
-                    <Grid item xs={4}>
+                    <Grid item lg={4} xs={12}>
                         <SkillCard Title="Web & Mobile" Icons={webMobileSkillsIcons} />
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item lg={4} xs={12}>
                         <SkillCard Title="General" Icons={generalSkillsIcons} />
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item lg={4} xs={4}>
                         <SkillCard Title="Game" Icons={gameSkillsIcons} />
                     </Grid>
 
-                    <Grid item xs={12}>
+                    <Grid item lg={12}>
                         <SkillCard Title="Programming Languages" Icons={programmingLanguagesIcons} />
                     </Grid>
                 </Grid>
