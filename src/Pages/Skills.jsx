@@ -15,6 +15,7 @@ import {
     SiAdobepremierepro,
     SiBootstrap,
     SiMaterialdesign,
+    SiFirebase,
 } from 'react-icons/si';
 import { FaReact, FaDatabase, FaGithub } from 'react-icons/fa';
 import { AiFillHtml5 } from 'react-icons/ai';
@@ -27,7 +28,6 @@ import IconJson from '../Icons/IconJson';
 import IconVolley from '../Icons/IconVolley';
 import IconSqlite from "../Icons/IconSqlite";
 import IconApi from "../Icons/IconApi";
-import Stack from "@mui/material/Stack";
 
 export default function Skills() {
     const webMobileSkillsIcons = [
@@ -46,6 +46,7 @@ export default function Skills() {
     const generalSkillsIcons = [
         SiMysql,
         IconSqlite,
+        SiFirebase,
         SiDotnet,
         SiMicrosoftazure,
         SiFigma,

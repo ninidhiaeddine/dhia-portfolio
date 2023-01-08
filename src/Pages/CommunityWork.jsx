@@ -1,9 +1,6 @@
 import DashedLine from "../Components/DashedLine";
 import CommunityYearlyWork from '../Components/CommunityYearlyWork';
 
-// import data:
-import { data } from '../Data/communityWork';
-
 export default function CommunityWork() {
     return (
         <div className="bg-secondary mt-10 pb-10 relative">
