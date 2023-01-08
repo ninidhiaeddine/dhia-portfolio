@@ -1,18 +1,21 @@
-[
+import SaidNgoLogo from "../Pages/Images/SaidNgoLogo.png";
+import VgsLogo from "../Pages/Images/VgsLogo.jpg";
+
+export const data = [
     {
-        "title": "Mobile Developer Intern",
+        "role": "Mobile Developer Intern",
         "timeRange": "Winter 2023",
         "location": "Beirut, Lebanon",
         "company": "SAID NGO",
-        "imgSrc": "~/src/Pages/Images/SaidNgoLogo.png",
+        "imgSrc": SaidNgoLogo,
         "description": "N/A"
     },
     {
-        "title": "Game Developer Intern",
+        "role": "Game Developer Intern",
         "timeRange": "Summer 2022",
         "location": "Beirut, Lebanon",
         "company": "Video Game Studio (VGS)",
-        "imgSrc": "~/src/Pages/Images/VgsLogo.jpg",
+        "imgSrc": VgsLogo,
         "description": "N/A"
     }
 ]
