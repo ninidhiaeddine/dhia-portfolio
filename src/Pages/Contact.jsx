@@ -7,12 +7,15 @@ import Snackbar from '@mui/material/Snackbar';
 import MuiAlert from '@mui/material/Alert';
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
+import { useNavigate } from 'react-router-dom';
 
 const Alert = forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
 export default function Contact() {
+    const navigate = useNavigate();
+
     const initialState = {
         fullName: "",
         email: "",
@@ -43,7 +46,7 @@ export default function Contact() {
         setInput((oldState) => {
             return { ...oldState, [e.target.name]: e.target.value }
         })
-        
+
         let targetRegex = regexPatterns[e.target.name];
         let targetString = String(input[e.target.name]);
 
@@ -52,15 +55,6 @@ export default function Contact() {
             [e.target.name]: targetRegex.test(targetString),
         })
     }
-
-    // function validateForm() {
-    //     setValidation({
-    //         fullName: input.fullName.length > 0,
-    //         email: input.email.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/) != null,
-    //         message: input.message.length > 0
-    //     })
-    // }
-
     function resetForm() {
         setInput(initialState);
     }
@@ -79,19 +73,24 @@ export default function Contact() {
 
         // open backdrop:
         setBackdropOpen(true);
-        /*
-            // send email:
-            emailjs.send(process.env.REACT_APP_SERVICE_ID,
-                process.env.REACT_APP_TEMPLATE_ID,
-                input, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
-                .then((result) => {
-                    setSuccessOpen(true);
-                    resetForm();
-                    setBackdropOpen(false);
-                }, (error) => {
-                    setErrorOpen(true);
-                    setBackdropOpen(false);
-                });*/
+
+        // send email:
+        emailjs.send(process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
+            input, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
+            .then((result) => {
+                setSuccessOpen(true);
+                resetForm();
+                setBackdropOpen(false);
+
+                let delayInMilliseconds = 4000;
+                setTimeout(() => {
+                    navigate('/');
+                }, delayInMilliseconds);
+            }, (error) => {
+                setErrorOpen(true);
+                setBackdropOpen(false);
+            });
     }
 
     return (
@@ -143,13 +142,13 @@ export default function Contact() {
                 <CircularProgress color="inherit" />
             </Backdrop>
 
-            <Snackbar open={successOpen} autoHideDuration={4000} onClose={() => setSuccessOpen(false)}>
+            <Snackbar open={successOpen} autoHideDuration={3000} onClose={() => setSuccessOpen(false)}>
                 <Alert onClose={() => setSuccessOpen(false)} severity="success" sx={{ width: '100%' }}>
-                    Successfully sent the message!
+                    Successfully sent the message! Redirecting you to the home page in 4 seconds...
                 </Alert>
             </Snackbar>
 
-            <Snackbar open={errorOpen} autoHideDuration={4000} onClose={() => setErrorOpen(false)}>
+            <Snackbar open={errorOpen} autoHideDuration={3000} onClose={() => setErrorOpen(false)}>
                 <Alert onClose={() => setErrorOpen(false)} severity="error" sx={{ width: '100%' }}>
                     An error has occured while sending the message!
                 </Alert>
