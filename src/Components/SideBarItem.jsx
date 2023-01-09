@@ -11,7 +11,8 @@ export default function SideBarItem({Icon, text, linkTo, audio}) {
     }
 
     return (
-        <div className={`flex items-center border border-white text-white rounded-full m-2 w-14 h-14 text-center 
+        <div className={`flex items-center border border-white text-white rounded-full text-center 
+            w-10 h-10 m-2 md:m-2 md:w-14 md:h-14
             hover:w-36 hover:scale-105 hover:bg-primary hover:border-none
             transition-all duration-200
             animate-pulse hover:animate-none
@@ -25,9 +26,9 @@ export default function SideBarItem({Icon, text, linkTo, audio}) {
                 }}>
             <Icon sx={{
                 color: 'white',
-                fontSize: 22,
-                margin: 2
-            }} />
+                fontSize: {xs: 20, md: 22},
+                margin: {xs: 1, md: 2}
+            }}/>
             {
                 isHovered && 
                     <div className="animate-slide-right min-w-max">
