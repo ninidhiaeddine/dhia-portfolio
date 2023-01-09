@@ -1,7 +1,7 @@
 import {
-  createBrowserRouter,
   RouterProvider,
   HashRouter,
+  createHashRouter,
 } from "react-router-dom";
 import Home from './Pages/Home';
 import Art from './Pages/Art';
@@ -17,7 +17,7 @@ import Grid from "@mui/material/Grid";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "Art",
     element: <Art />,
