@@ -12,22 +12,22 @@ export default function Art() {
             </div>
             <div className="text-center text-white">Here are excerpts of my artistic works:</div>
             <img src={GroupPic} alt="" className="mt-4 rounded-xl grayscale w-[40rem] animate-pulse"></img>
-            <img src={SoloPic} alt="" className="rounded-xl grayscale absolute z-10 w-[35rem]
-            -translate-y-[15rem] right-0 -translate-x-[5rem]
+            <img src={SoloPic} alt="" className="rounded-xl grayscale z-10 mt-5 md:absolute w-[35rem] md:mt-0
+            md:-translate-y-[15rem] md:right-0 md:-translate-x-[5rem]
             animate-pulse"></img>
 
-            <div className='relative top-[35rem]'>
+            <div className='mt-5 md:relative md:top-[35rem]'>
                 <div className='bg-secondary pb-10'>
                     <div className='text-2xl text-center text-tertiary font-bold p-4'>Chamber Music Performance</div>
                     <div className='flex justify-center'>
-                        <iframe width="700" height="394" src="https://www.youtube.com/embed/RNaKVZNk5-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="700" height="394" src="https://www.youtube.com/embed/RNaKVZNk5-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                 </div>
 
                 <div className='mt-5'>
                     <div className='text-2xl text-center text-tertiary font-bold p-4'>Shoft Films</div>
                     <div className='flex justify-center'>
-                        <iframe width="700" height="394" src="https://www.youtube.com/embed/No9A6AG1ym4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe width="700" height="394" src="https://www.youtube.com/embed/No9A6AG1ym4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                 </div>
 
@@ -52,6 +52,7 @@ export default function Art() {
                         </a>
                     </div>
                 </div>
+                <div className="h-[8rem] md:h-0"></div>
             </div>
         </>
     );

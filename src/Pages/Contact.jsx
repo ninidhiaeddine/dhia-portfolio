@@ -98,7 +98,7 @@ export default function Contact() {
             <div className="text-primary font-bold text-5xl pt-8">Send me a message!</div>
             <div className="text-white text-xl pt-6 w-[22rem] m-auto">Got a question, proposal, or just want to say Hi? Go ahead!</div>
             <form onSubmit={handleSubmit}>
-                <Stack spacing={2} sx={{ margin: 'auto', paddingTop: 2, width: 400 }}>
+                <Stack spacing={2} sx={{ margin: 'auto', paddingTop: 2 }} className="w-[20rem] md:w-[30rem]">
                     <TextField label="Full Name" variant="filled" type="text" value={input.fullName} name="fullName"
                         onChange={handleChange}
                         error={!validation.fullName}
@@ -123,7 +123,7 @@ export default function Contact() {
                         name="message"
                     />
 
-                    <button className="bg-background text-primary py-2 px-4 mt-5 w-[25rem] border border-primary rounded 
+                    <button className="bg-background text-primary py-2 px-4 mt-5 border border-primary rounded 
         hover:bg-primary hover:text-white hover:border-transparent hover:scale-110
         transition ease-in-out"
                         type="submit">
