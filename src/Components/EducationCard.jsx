@@ -7,7 +7,7 @@ export default function EducationCard({title, timeRangeString, locationString, i
         max-w-[20rem] md:max-w-[25rem]
         hover:from-primary hover:to-secondary hover:scale-110 transition-all ease-in-out">
             <Stack direction="row" spacing={4}>
-                <img src={imgSrc} className="rounded-full h-20 w-20" />
+                <img src={imgSrc} alt="" className="rounded-full h-20 w-20" />
                 <Stack direction="column">
                     <div className="text-white font-bold">{title}</div>
                     <div className="text-white font-thin text-xs">{timeRangeString}</div>

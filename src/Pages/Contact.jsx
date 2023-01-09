@@ -24,7 +24,7 @@ export default function Contact() {
 
     const regexPatterns = {
         fullName: /^[a-zA-Z ]{3,}$/,
-        email: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
+        email: /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g,
         message: /^[a-zA-Z0-9 ]{5,}$/,
     }
 
