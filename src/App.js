@@ -1,7 +1,7 @@
 import {
   createBrowserRouter,
   RouterProvider,
-  BrowserRouter,
+  HashRouter,
 } from "react-router-dom";
 import Home from './Pages/Home';
 import Art from './Pages/Art';
@@ -77,11 +77,11 @@ function App() {
       <CssBaseline />
       <Grid container direction={{xs: 'column-reverse', md: 'row'}}>
         <Grid item xs={12} md={1} className="relative">
-          <BrowserRouter><SideBar /></BrowserRouter>
+          <HashRouter><SideBar /></HashRouter>
         </Grid>
 
         <Grid item xs={12} md={11}>
-          <BrowserRouter><TopBar /></BrowserRouter>
+          <HashRouter><TopBar /></HashRouter>
           <RouterProvider router={router} />
         </Grid>
       </Grid>
