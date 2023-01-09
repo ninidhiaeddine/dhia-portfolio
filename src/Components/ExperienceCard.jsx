@@ -3,7 +3,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 export default function ExperienceCard({title, timeRangeString, locationString, companyName, imgSrc, description}) {
     return (
-        <div className="bg-gradient-to-tr from-dark-purple to-dark-purple hover:border hover:border-tertiary rounded-lg w-[26rem] p-5
+        <div className="bg-gradient-to-tr from-dark-purple to-dark-purple hover:border hover:border-tertiary rounded-lg p-5
+        max-w-[20rem] md:max-w-[26rem]
         hover:from-dark-purple hover:to-dark-secondary hover:scale-110 transition-all ease-in-out">
             <Stack direction="row" spacing={4}>
                 <img src={imgSrc} alt="" className="rounded-full h-20 w-20 border-2 border-white" />

@@ -3,7 +3,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 export default function EducationCard({title, timeRangeString, locationString, imgSrc, descriptions}) {
     return (
-        <div className="bg-gradient-to-r from-dark-purple to-secondary rounded w-[26rem] p-5
+        <div className="bg-gradient-to-br from-dark-purple to-secondary rounded-md p-5
+        max-w-[20rem] md:max-w-[25rem]
         hover:from-primary hover:to-secondary hover:scale-110 transition-all ease-in-out">
             <Stack direction="row" spacing={4}>
                 <img src={imgSrc} className="rounded-full h-20 w-20" />
