@@ -1,4 +1,4 @@
-import './App.css';
+import React from 'react';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -13,7 +13,7 @@ import Projects from './Pages/Projects';
 import Skills from './Pages/Skills';
 import SideBar from './Components/SideBar';
 import TopBar from './Components/TopBar';
-import React from 'react';
+import ErrorPage from './Pages/ErrorPage';
 import Grid from "@mui/material/Grid";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -22,30 +22,37 @@ const router = createBrowserRouter([
   {
     path: "Art",
     element: <Art />,
+    errorElement: <ErrorPage />
   },
   {
     path: "Contact",
     element: <Contact />,
+    errorElement: <ErrorPage />
   },
   {
     path: "Education",
     element: <Education />,
+    errorElement: <ErrorPage />
   },
   {
     path: "Experience",
     element: <Experience />,
+    errorElement: <ErrorPage />
   },
   {
     path: "Projects",
     element: <Projects />,
+    errorElement: <ErrorPage />
   },
   {
     path: "Skills",
     element: <Skills />,
+    errorElement: <ErrorPage />
   },
   {
     path: "/",
     element: <Home />,
+    errorElement: <ErrorPage />
   },
 ]);
 
@@ -69,12 +76,12 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-      <Grid container>
-        <Grid item xs={1} className="relative">
+      <Grid container direction={{xs: 'column-reverse', md: 'row'}}>
+        <Grid item xs={12} md={1} className="relative">
           <BrowserRouter><SideBar /></BrowserRouter>
         </Grid>
 
-        <Grid item xs={11}>
+        <Grid item xs={12} md={11}>
           <BrowserRouter><TopBar /></BrowserRouter>
           <RouterProvider router={router} />
         </Grid>
