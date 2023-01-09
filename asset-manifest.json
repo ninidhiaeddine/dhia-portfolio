@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/dhia-portfolio/static/css/main.22cd22ab.css",
+    "main.js": "/dhia-portfolio/static/js/main.8326a940.js",
+    "static/media/ArtGroupPic.jpg": "/dhia-portfolio/static/media/ArtGroupPic.8efbdf05f58329aa9775.jpg",
+    "static/media/DhiaHero.png": "/dhia-portfolio/static/media/DhiaHero.ca7a4c6505bc0d7e6ca0.png",
+    "static/media/100SecondsScreen2.png": "/dhia-portfolio/static/media/100SecondsScreen2.46373ad866bc4b962aa6.png",
+    "static/media/ArtSoloPic.jpg": "/dhia-portfolio/static/media/ArtSoloPic.d0d8a74fec62d98eab90.jpg",
+    "static/media/mixkit-greeting-music-box-tone-699.wav": "/dhia-portfolio/static/media/mixkit-greeting-music-box-tone-699.641ec3741d0b18f8df01.wav",
+    "static/media/DhiaRound.png": "/dhia-portfolio/static/media/DhiaRound.4e2edef7b4943a9e2180.png",
+    "static/media/mixkit-chord-swell-short-692.wav": "/dhia-portfolio/static/media/mixkit-chord-swell-short-692.7fdd1c5fa9c90977b711.wav",
+    "static/media/SSMA-Mobile.png": "/dhia-portfolio/static/media/SSMA-Mobile.0d4463f21d08ab1f8e73.png",
+    "static/media/MotorMayhem.png": "/dhia-portfolio/static/media/MotorMayhem.da2de1afe5e195ad2186.png",
+    "static/media/SSMA-Api.png": "/dhia-portfolio/static/media/SSMA-Api.976ed3cb36a9cec12f5a.png",
+    "static/media/SSMA-Web.png": "/dhia-portfolio/static/media/SSMA-Web.20f2ad96da11504f6dae.png",
+    "static/media/SpiritOfYouthLogo.png": "/dhia-portfolio/static/media/SpiritOfYouthLogo.41e7247d0dfb1dbb973c.png",
+    "static/media/SaidNgoLogo.png": "/dhia-portfolio/static/media/SaidNgoLogo.493923fdc86cce5a7ee4.png",
+    "static/media/AubLogo.png": "/dhia-portfolio/static/media/AubLogo.a5de144e9e52537256b5.png",
+    "static/media/FoodBlessedLogo.png": "/dhia-portfolio/static/media/FoodBlessedLogo.9127f3d427ea2dcc2213.png",
+    "static/media/QMeApi.png": "/dhia-portfolio/static/media/QMeApi.841926143559774c1c97.png",
+    "static/media/AlbertNassarLogo.png": "/dhia-portfolio/static/media/AlbertNassarLogo.f93e9545e9a29c4f7713.png",
+    "static/media/GymManagementApp.jpg": "/dhia-portfolio/static/media/GymManagementApp.62ab09710062646ff3fe.jpg",
+    "static/media/JafraLogo.png": "/dhia-portfolio/static/media/JafraLogo.2d2a399f68a1cc662a5d.png",
+    "static/media/SELogo.png": "/dhia-portfolio/static/media/SELogo.2a21a9cc8dd78c9befae.png",
+    "index.html": "/dhia-portfolio/index.html",
+    "main.22cd22ab.css.map": "/dhia-portfolio/static/css/main.22cd22ab.css.map",
+    "main.8326a940.js.map": "/dhia-portfolio/static/js/main.8326a940.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22cd22ab.css",
+    "static/js/main.8326a940.js"
+  ]
+}
