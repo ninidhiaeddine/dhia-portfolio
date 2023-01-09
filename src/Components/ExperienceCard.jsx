@@ -15,7 +15,7 @@ export default function ExperienceCard({title, timeRangeString, locationString, 
                         <LocationOnIcon sx={{fontSize: 16}}/>
                         <div className="text-white text-xs font-thin">{locationString}</div>
                     </div>
-                    <div className="text-bold mt-4">{companyName}</div>                    
+                    <i className="text-bold mt-4">{companyName}</i>                    
                 </Stack>
             </Stack>
             <div className="mt-5 text-justify text-sm">{description}</div>
