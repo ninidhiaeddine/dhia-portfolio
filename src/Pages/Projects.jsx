@@ -5,6 +5,7 @@ export default function Projects() {
         <>
             <div className="text-primary font-bold text-5xl py-8 text-center">Projects</div>
             <ProjectsTabs/>
+            <div className="pb-20"></div>
         </>
     );
 }

@@ -62,7 +62,7 @@ export default function Skills() {
     return (
         <>
             <div className="text-primary font-bold text-5xl pt-8 text-center">Skills</div>
-            <div className="pb-20 m-10 mt-14md:m-20 md:pb-1">
+            <div className="pb-20 m-10 mt-14 md:m-20 md:pb-1">
                 <Grid container columnSpacing={2} rowSpacing={4} >
                     <Grid item lg={4} xs={12}>
                         <SkillCard Title="Web & Mobile" Icons={webMobileSkillsIcons} />

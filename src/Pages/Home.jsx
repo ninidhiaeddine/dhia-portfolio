@@ -28,7 +28,7 @@ export default function Home() {
                 <Grid item xs={12} md={8}>
                     <div className="text-white text-2xl mt-24">Hi! I am</div>
                     <div className="font-bold text-primary text-6xl after:text-white after:content-['.']">Dhia Eddine Nini</div>
-                    <div className="text-white mr-10 lg:mr-20 text-2xl pt-4 text-justify">A computer science senior who is passionate about <b>software engineering</b>, <b>game development</b>, and <b>music</b>.</div>
+                    <div className="text-white md:mr-20 text-2xl pt-4 text-justify">A computer science senior who is passionate about <b>software engineering</b>, <b>game development</b>, and <b>music</b>.</div>
 
                     <Stack direction="row" spacing={2} sx={{ paddingTop: 5 }}>
                         <button className="bg-primary text-white py-2 px-4 border border-primary
