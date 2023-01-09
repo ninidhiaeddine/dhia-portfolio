@@ -10,12 +10,12 @@ export default function ExperienceCard({title, timeRangeString, locationString, 
                 <img src={imgSrc} alt="" className="rounded-full h-20 w-20 border-2 border-white" />
                 <Stack direction="column">
                     <div className="text-white font-bold">{title}</div>
-                    <div className="text-white">{timeRangeString}</div>
+                    <div className="text-white font-thin text-xs">{timeRangeString}</div>
                     <div className="flex mt-1">
-                        <LocationOnIcon sx={{fontSize: 20}}/>
-                        <div className="text-white text-sm">{locationString}</div>
+                        <LocationOnIcon sx={{fontSize: 16}}/>
+                        <div className="text-white text-xs font-thin">{locationString}</div>
                     </div>
-                    <div>{companyName}</div>                    
+                    <div className="text-bold mt-4">{companyName}</div>                    
                 </Stack>
             </Stack>
             <div className="mt-5 text-justify text-sm">{description}</div>

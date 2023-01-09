@@ -6,10 +6,10 @@ export default function TabView({typeFilter}) {
     let filteredData = data.filter(x => x.type === typeFilter);
 
     return (
-        <Grid container spacing={2}>
+        <Grid container spacing={6} sx={{paddingBottom: 3}}>
             {
                 filteredData.map((x) => {
-                    return <Grid item xs={4}>
+                    return <Grid item xs={12} md={4} className="hover:scale-110 transition ease-in-out">
                         <ProjectCard 
                             title={x.title}
                             imgSrc={x.imgSrc}

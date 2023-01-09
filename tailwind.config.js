@@ -4,7 +4,7 @@ module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   theme: {
     fontFamily: {
-      'ubuntu': ['Ubuntu', 'sans-serif'],
+      ubuntu: "'Ubuntu', sans-serif",
     },
     colors: {
       'primary': '#7C4DFF',

@@ -18,7 +18,7 @@ import ChordAudio from '../Audio/mixkit-chord-swell-short-692.wav';
 
 export default function SideBar() {
     return (
-        <div className="fixed z-100 bg-background flex flex-row bottom-5 left-0 md:flex-col md:top-12 md:left-0 text-white">
+        <div className="fixed overflow-scroll z-100 bg-background flex flex-row bottom-5 left-0 md:overflow-hidden md:flex-col md:top-12 md:left-0 text-white">
             <SideBarItem Icon={HomeIcon} text="Home" linkTo='/' audio={ChordAudio} />
             <SideBarItem Icon={BuildIcon} text="Skills" linkTo='Skills' audio={ChordAudio} />
             <SideBarItem Icon={SchoolIcon} text="Education" linkTo='Education' audio={ChordAudio} />

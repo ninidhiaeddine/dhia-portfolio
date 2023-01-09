@@ -10,10 +10,10 @@ export default function EducationCard({title, timeRangeString, locationString, i
                 <img src={imgSrc} className="rounded-full h-20 w-20" />
                 <Stack direction="column">
                     <div className="text-white font-bold">{title}</div>
-                    <div className="text-white">{timeRangeString}</div>
+                    <div className="text-white font-thin text-xs">{timeRangeString}</div>
                     <div className="flex mt-1">
-                        <LocationOnIcon sx={{fontSize: 20}}/>
-                        <div className="text-white text-sm">{locationString}</div>
+                        <LocationOnIcon sx={{fontSize: 16}}/>
+                        <div className="text-white text-xs font-thin">{locationString}</div>
                     </div>
                     
                     <ul className="ml-4 mt-5 list-disc">
