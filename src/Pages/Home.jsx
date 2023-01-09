@@ -55,7 +55,8 @@ export default function Home() {
                 </Grid>
                 <Grid item xs={12} md={4}>
                     <img src={image} alt="Dhia" className="grayscale
-                            object-cover rounded-full md:object-fit md:rounded-none" />
+                            object-cover rounded-full 
+                            md:object-fit md:rounded-none" />
                 </Grid>
             </Grid>
         </div>
