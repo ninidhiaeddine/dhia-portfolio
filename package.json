@@ -1,5 +1,6 @@
 {
-  "name": "dhia-portfolio",
+  "homepage": "https://ninidhiaeddine.github.io",
+  "name": "ninidhiaeddine",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
