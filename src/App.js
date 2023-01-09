@@ -17,8 +17,6 @@ import React from 'react';
 import Grid from "@mui/material/Grid";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import Ubuntu from './Fonts/Ubuntu/Ubuntu-Regular.ttf';
-import { Typography } from '@mui/material';
 
 const router = createBrowserRouter([
   {
