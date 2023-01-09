@@ -70,7 +70,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Grid container>
-        <Grid item xs={1}>
+        <Grid item xs={1} className="relative">
           <BrowserRouter><SideBar /></BrowserRouter>
         </Grid>
 

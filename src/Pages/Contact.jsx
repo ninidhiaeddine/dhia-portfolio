@@ -94,9 +94,9 @@ export default function Contact() {
     }
 
     return (
-        <div className="text-center">
+        <>
             <div className="text-primary font-bold text-5xl pt-8">Send me a message!</div>
-            <div className="text-white text-xl pt-6 w-[22rem] m-auto">Got a question, proposal, or just want to say Hi? Go ahead!</div>
+            <div className="text-white text-lg pt-6 w-[22rem] m-auto font-thin">Got a question, proposal, or just want to say Hi? Go ahead!</div>
             <form onSubmit={handleSubmit}>
                 <Stack spacing={2} sx={{ margin: 'auto', paddingTop: 2 }} className="w-[20rem] md:w-[30rem]">
                     <TextField label="Full Name" variant="filled" type="text" value={input.fullName} name="fullName"
@@ -153,6 +153,6 @@ export default function Contact() {
                     An error has occured while sending the message!
                 </Alert>
             </Snackbar>
-        </div>
+        </>
     );
 }
