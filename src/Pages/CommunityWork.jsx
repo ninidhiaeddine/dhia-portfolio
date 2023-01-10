@@ -25,37 +25,44 @@ export default function CommunityWork() {
                 </div>
 
                 { /* horizontal dashed lines */}
-                <div className="absolute top-[22rem] left-[10rem] hidden lg:block">
-                    <DashedLine length={160} isVertical={false} />
-                    <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+                <div className="absolute top-[18rem] left-[10rem] hidden lg:block">
+                    <DashedLine length={170} isVertical={false} />
+                    <div className="h-4 w-[4rem] bg-tertiary rounded-full absolute -top-2 left-[9rem]
+                    shadow-xl shadow-tertiary transform -rotate-90"></div>
                 </div>
 
-                <div className="absolute top-[47rem] left-[10rem] hidden lg:block">
-                    <DashedLine length={160} isVertical={false} />
-                    <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+                <div className="absolute top-[44rem] left-[10rem] hidden lg:block">
+                    <DashedLine length={170} isVertical={false} />
+                    <div className="h-4 w-[4rem] bg-tertiary rounded-full absolute -top-2 left-[9rem]
+                    shadow-xl shadow-tertiary transform -rotate-90"></div>
                 </div>
-                <div className="absolute top-[65rem] left-[10rem] hidden lg:block">
-                    <DashedLine length={160} isVertical={false} />
-                    <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+                <div className="absolute top-[63rem] left-[10rem] hidden lg:block">
+                    <DashedLine length={170} isVertical={false} />
+                    <div className="h-4 w-[4rem] bg-tertiary rounded-full absolute -top-2 left-[9rem]
+                    shadow-xl shadow-tertiary transform -rotate-90"></div>
                 </div>
-                <div className="absolute top-[81rem] left-[10rem] hidden lg:block">
-                    <DashedLine length={160} isVertical={false} />
-                    <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+                <div className="absolute top-[77.5rem] left-[10rem] hidden lg:block">
+                    <DashedLine length={170} isVertical={false} />
+                    <div className="h-4 w-[4rem] bg-tertiary rounded-full absolute -top-2 left-[9rem]
+                    shadow-xl shadow-tertiary transform -rotate-90"></div>
                 </div>
-                <div className="absolute top-[105rem] left-[10rem] hidden lg:block">
-                    <DashedLine length={160} isVertical={false} />
-                    <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+                <div className="absolute top-[104.5rem] left-[10rem] hidden lg:block">
+                    <DashedLine length={170} isVertical={false} />
+                    <div className="h-4 w-[4rem] bg-tertiary rounded-full absolute -top-2 left-[9rem]
+                    shadow-xl shadow-tertiary transform -rotate-90"></div>
                 </div>
-                <div className="absolute top-[131rem] left-[10rem] hidden lg:block">
-                    <DashedLine length={160} isVertical={false} />
-                    <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+                <div className="absolute top-[127.5rem] left-[10rem] hidden lg:block">
+                    <DashedLine length={170} isVertical={false} />
+                    <div className="h-4 w-[4rem] bg-tertiary rounded-full absolute -top-2 left-[9rem]
+                    shadow-xl shadow-tertiary transform -rotate-90"></div>
                 </div>
-                <div className="absolute top-[149rem] left-[10rem] hidden lg:block">
-                    <DashedLine length={160} isVertical={false} />
-                    <div className="h-3 w-3 bg-white rounded-full absolute -top-1 left-[10rem]"></div>
+                <div className="absolute top-[146.5rem] left-[10rem] hidden lg:block">
+                    <DashedLine length={170} isVertical={false} />
+                    <div className="h-4 w-[4rem] bg-tertiary rounded-full absolute -top-2 left-[9rem]
+                    shadow-xl shadow-tertiary transform -rotate-90"></div>
                 </div>
             </div>
-            <div className="h-[8rem] md:h-0"></div>
+            <div className="h-[9rem] md:h-0"></div>
         </>
     );
 }

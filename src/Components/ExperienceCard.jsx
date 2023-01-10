@@ -5,6 +5,7 @@ export default function ExperienceCard({title, timeRangeString, locationString, 
     return (
         <div className="bg-gradient-to-tr from-dark-purple to-dark-purple hover:border hover:border-tertiary rounded-lg p-5
         max-w-[20rem] md:max-w-[26rem]
+        shadow-xl   
         hover:from-dark-purple hover:to-dark-secondary hover:scale-110 transition-all ease-in-out">
             <Stack direction="row" spacing={4}>
                 <img src={imgSrc} alt="" className="rounded-full h-20 w-20 border-2 border-white" />
