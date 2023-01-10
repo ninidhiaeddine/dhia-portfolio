@@ -1,33 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.1f327cc7.css",
-    "main.js": "/static/js/main.58791a47.js",
+    "main.css": "/static/css/main.559dbbc4.css",
+    "main.js": "/static/js/main.696e0da1.js",
     "static/media/ArtGroupPic.jpg": "/static/media/ArtGroupPic.8efbdf05f58329aa9775.jpg",
     "static/media/DhiaHero.png": "/static/media/DhiaHero.ca7a4c6505bc0d7e6ca0.png",
-    "static/media/100SecondsScreen2.png": "/static/media/100SecondsScreen2.46373ad866bc4b962aa6.png",
     "static/media/ArtSoloPic.jpg": "/static/media/ArtSoloPic.d0d8a74fec62d98eab90.jpg",
     "static/media/mixkit-greeting-music-box-tone-699.wav": "/static/media/mixkit-greeting-music-box-tone-699.641ec3741d0b18f8df01.wav",
     "static/media/DhiaRound.png": "/static/media/DhiaRound.4e2edef7b4943a9e2180.png",
     "static/media/mixkit-chord-swell-short-692.wav": "/static/media/mixkit-chord-swell-short-692.7fdd1c5fa9c90977b711.wav",
-    "static/media/SSMA-Mobile.png": "/static/media/SSMA-Mobile.0d4463f21d08ab1f8e73.png",
-    "static/media/MotorMayhem.png": "/static/media/MotorMayhem.da2de1afe5e195ad2186.png",
-    "static/media/SSMA-Api.png": "/static/media/SSMA-Api.976ed3cb36a9cec12f5a.png",
-    "static/media/SSMA-Web.png": "/static/media/SSMA-Web.20f2ad96da11504f6dae.png",
     "static/media/SpiritOfYouthLogo.png": "/static/media/SpiritOfYouthLogo.41e7247d0dfb1dbb973c.png",
     "static/media/SaidNgoLogo.png": "/static/media/SaidNgoLogo.493923fdc86cce5a7ee4.png",
     "static/media/AubLogo.png": "/static/media/AubLogo.a5de144e9e52537256b5.png",
     "static/media/FoodBlessedLogo.png": "/static/media/FoodBlessedLogo.9127f3d427ea2dcc2213.png",
-    "static/media/QMeApi.png": "/static/media/QMeApi.841926143559774c1c97.png",
     "static/media/AlbertNassarLogo.png": "/static/media/AlbertNassarLogo.f93e9545e9a29c4f7713.png",
-    "static/media/GymManagementApp.jpg": "/static/media/GymManagementApp.62ab09710062646ff3fe.jpg",
     "static/media/JafraLogo.png": "/static/media/JafraLogo.2d2a399f68a1cc662a5d.png",
     "static/media/SELogo.png": "/static/media/SELogo.2a21a9cc8dd78c9befae.png",
     "index.html": "/index.html",
-    "main.1f327cc7.css.map": "/static/css/main.1f327cc7.css.map",
-    "main.58791a47.js.map": "/static/js/main.58791a47.js.map"
+    "main.559dbbc4.css.map": "/static/css/main.559dbbc4.css.map",
+    "main.696e0da1.js.map": "/static/js/main.696e0da1.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f327cc7.css",
-    "static/js/main.58791a47.js"
+    "static/css/main.559dbbc4.css",
+    "static/js/main.696e0da1.js"
   ]
 }
