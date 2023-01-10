@@ -23,7 +23,7 @@ export default function Home() {
     }, [])
 
     return (
-        <div className="ml-10 mr-10 mb-28">
+        <div className="ml-10 mr-10 mb-24 md:mb-0">
             <Grid container spacing={2}>
                 <Grid item xs={12} md={8}>
                     <div className="text-white text-2xl mt-24">Hi! I am</div>
@@ -55,8 +55,8 @@ export default function Home() {
                 </Grid>
                 <Grid item xs={12} md={4}>
                     <img src={image} alt="Dhia" className="grayscale
-                            object-cover rounded-full 
-                            md:object-fit md:rounded-none" />
+                            rounded-full
+                            md:rounded-none" />
                 </Grid>
             </Grid>
         </div>

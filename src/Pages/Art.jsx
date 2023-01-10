@@ -24,14 +24,14 @@ export default function Art() {
                 <div className='bg-secondary pb-10'>
                     <div className='text-2xl text-center text-tertiary font-bold p-4'>Chamber Music Performance</div>
                     <div className='flex justify-center'>
-                        <iframe width={{xs: 400, md: 700}} height={{xs: 240, md: 394}} src="https://www.youtube.com/embed/RNaKVZNk5-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        <iframe width={{sm: 400, md: 700}} height={{sm: 240, md: 394}} src="https://www.youtube.com/embed/RNaKVZNk5-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                 </div>
 
                 <div className='mt-5'>
                     <div className='text-2xl text-center text-tertiary font-bold p-4'>Shoft Films</div>
                     <div className='flex justify-center'>
-                        <iframe width={{xs: 400, md: 700}} height={{xs: 240, md: 394}} src="https://www.youtube.com/embed/No9A6AG1ym4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        <iframe width={{sm: 400, md: 700}} height={{sm: 240, md: 394}} src="https://www.youtube.com/embed/No9A6AG1ym4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                 </div>
 
