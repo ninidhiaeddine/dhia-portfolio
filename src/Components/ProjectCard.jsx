@@ -1,47 +1,39 @@
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
 import Chip from '@mui/material/Chip';
+import { AiFillFolderOpen } from 'react-icons/ai';
 
-export default function ProjectCard({ title, imgSrc, skills, description, link }) {
+export default function ProjectCard({ title, skills, description, link }) {
   return (
-    <Card>
-      <CardMedia
-        sx={{ height: 200 }}
-        image={imgSrc}
-      />
-      <CardContent sx={{paddingTop: 3, paddingLeft: 3, paddingRight: 3}} >
-        <Typography gutterBottom variant="h5" component="div" className='h-16'>
-          {title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary" className='text-justify h-[8rem]' >
-          {description}
-        </Typography>
-        <Grid container spacing={1} sx={{textAlign: 'center', marginTop: 2, height: 50}}>
-          {
-            skills.map(x => {
-              return <Grid item xs={4}>
-                <Chip label={x} variant="outlined" />
-              </Grid>
-            })
-          }
-        </Grid>
-      </CardContent>
-      <CardActions sx={{padding: 2, justifyContent: 'end'}}>
-        <a href={link}
-          target="_blank"
-          rel="noopener noreferrer">
-          <button className='bg-background text-primary py-1 px-3 border border-primary rounded 
+    <div class="flex justify-center">
+      <div class="block rounded-lg shadow-lg bg-dark-purple max-w-sm text-center">
+        <div class="pt-3 px-6">
+          <AiFillFolderOpen className="h-10 w-10 text-primary" />
+        </div>
+        <div class="px-6 py-4">
+          <p class="text-white text-left font-bold text-xl mb-2 h-[3.5rem]">{title}</p>
+          <p class="text-white font-thin text-sm text-justify mb-4 h-[9rem]">
+            {description}
+          </p>
+          <div className='flex gap-2'>
+            {
+              skills.map(x => {
+                return <Chip label={x}  />
+              })
+            }
+          </div>
+        </div>
+        <div class="py-3 px-6 text-gray-600">
+          <a href={link}
+            target="_blank"
+            rel="noopener noreferrer">
+            <button className='bg-dark-purple text-primary py-1 px-3 border border-primary rounded 
         hover:bg-primary hover:text-white hover:border-transparent hover:scale-110
         transition ease-in-out'>
-            View Source Code
-          </button>
-        </a>
-      </CardActions>
-    </Card>
+              View Source Code
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
   );
 }

@@ -9,7 +9,7 @@ export default function TabView({typeFilter}) {
         <Grid container spacing={6} sx={{paddingBottom: 3}}>
             {
                 filteredData.map((x) => {
-                    return <Grid item xs={12} md={4} className="hover:scale-110 transition ease-in-out">
+                    return <Grid item xs={12} md={4} >
                         <ProjectCard 
                             title={x.title}
                             imgSrc={x.imgSrc}
