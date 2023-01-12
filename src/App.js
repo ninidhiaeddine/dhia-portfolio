@@ -76,7 +76,7 @@ function App() {
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <Grid container direction={{xs: 'column-reverse', md: 'row'}}>
-        <Grid item xs={12} md={1} className="relative">
+        <Grid item xs={6} md={1} className="relative flex justify-center items-center">
           <HashRouter><SideBar /></HashRouter>
         </Grid>
 

@@ -12,8 +12,8 @@ export default function SideBarItem({Icon, text, linkTo, audio}) {
 
     return (
         <div className={`flex items-center md:border md:border-white text-white rounded-full text-center 
-            w-10 h-10 m-2 md:m-2 md:w-14 md:h-14
-            md:hover:w-36 md:hover:scale-105 md:hover:bg-primary md:hover:border-none
+            md:m-2 md:w-14 md:h-14
+            md:hover:w-36 m-1 md:hover:scale-105 md:hover:bg-primary md:hover:border-none
             transition-all duration-200
             animate-pulse hover:animate-none
             z-50`}
@@ -31,7 +31,7 @@ export default function SideBarItem({Icon, text, linkTo, audio}) {
             }}/>
             {
                 isHovered && 
-                    <div className="animate-slide-right min-w-max">
+                    <div className="hidden md:block animate-slide-right min-w-max">
                         {text}
                     </div>
             }
