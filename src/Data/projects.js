@@ -22,6 +22,31 @@ export const data = [
         "githubLink": "https://github.com/CMPS297V-Motor-Mayhem/Motor-Mayhem"
     },
     {
+        "title": "Hirafi",
+        "description": `A mobile app that provides a platform for artists from the MENA (Middle East and North Africa) 
+        region to showcase and sell their artwork to a global audience. The app enables artists 
+        to create their profiles, upload images and descriptions of their work, and set prices.`,
+        "type": "mobile",
+        "skills": [
+            "Flutter",
+            "Firebase"
+        ],
+        "githubLink": "https://github.com/ninidhiaeddine/hirafi-mobile"
+    },
+    {
+        "title": "Said NGO",
+        "description": `A mobile app that provides comprehensive information about
+         colorectal cancer and help patients manage their health. The app includes a range of
+          features, including a section where users can learn about colorectal cancer and its
+           symptoms, a steps counter, a symptom checker, and so much more.`,
+        "type": "mobile",
+        "skills": [
+            "Flutter",
+            "Strapi"
+        ],
+        "githubLink": "https://github.com/ninidhiaeddine/said-mobile"
+    },
+    {
         "title": "Student Services Management (Mobile)",
         "description": `A mobile app that allows students to easily 
             access and reserve various services offered by the American University of Beirut. With the app, 

@@ -12,7 +12,7 @@ export default function SideBarItem({Icon, text, linkTo, audio}) {
 
     return (
         <div className={`flex items-center md:border md:border-white text-white rounded-full text-center 
-            md:m-2 md:w-14 md:h-14
+            md:m-2 md:w-14 md:h-14 focus:bg-primary
             md:hover:w-36 m-1 md:hover:scale-105 md:hover:bg-primary md:hover:border-none
             transition-all duration-200
             animate-pulse hover:animate-none
