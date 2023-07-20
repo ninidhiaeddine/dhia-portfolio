@@ -8,7 +8,7 @@ import SocialMediaLink from './SocialMediaLink';
 export default function SocialMediaBar() {
     const linkToLinkedIn = 'https://www.linkedin.com/in/ninidhiaeddine/';
     const linkToFacebook = 'https://www.facebook.com/DhiaEddineNini';
-    const linkToInstagram = 'https://www.instagram.com/dhia.eddine.n/';
+    const linkToInstagram = 'https://www.instagram.com/dhia.nini/';
     const linkToGitHub = 'https://github.com/ninidhiaeddine';
 
     return (
