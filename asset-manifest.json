@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.0adbd9bb.css",
-    "main.js": "/static/js/main.26d0756e.js",
+    "main.js": "/static/js/main.59a3b8fd.js",
     "static/media/ArtGroupPic.jpg": "/static/media/ArtGroupPic.8efbdf05f58329aa9775.jpg",
-    "static/media/DhiaHero.png": "/static/media/DhiaHero.ca7a4c6505bc0d7e6ca0.png",
+    "static/media/DhiaHero.png": "/static/media/DhiaHero.3db9c7f8efea570a0378.png",
+    "static/media/DhiaRound.png": "/static/media/DhiaRound.292e01532602db392a78.png",
     "static/media/ArtSoloPic.jpg": "/static/media/ArtSoloPic.d0d8a74fec62d98eab90.jpg",
     "static/media/mixkit-greeting-music-box-tone-699.wav": "/static/media/mixkit-greeting-music-box-tone-699.641ec3741d0b18f8df01.wav",
-    "static/media/DhiaRound.png": "/static/media/DhiaRound.4e2edef7b4943a9e2180.png",
     "static/media/mixkit-chord-swell-short-692.wav": "/static/media/mixkit-chord-swell-short-692.7fdd1c5fa9c90977b711.wav",
     "static/media/SpiritOfYouthLogo.png": "/static/media/SpiritOfYouthLogo.41e7247d0dfb1dbb973c.png",
     "static/media/SaidNgoLogo.png": "/static/media/SaidNgoLogo.493923fdc86cce5a7ee4.png",
@@ -17,10 +17,10 @@
     "static/media/SELogo.png": "/static/media/SELogo.2a21a9cc8dd78c9befae.png",
     "index.html": "/index.html",
     "main.0adbd9bb.css.map": "/static/css/main.0adbd9bb.css.map",
-    "main.26d0756e.js.map": "/static/js/main.26d0756e.js.map"
+    "main.59a3b8fd.js.map": "/static/js/main.59a3b8fd.js.map"
   },
   "entrypoints": [
     "static/css/main.0adbd9bb.css",
-    "static/js/main.26d0756e.js"
+    "static/js/main.59a3b8fd.js"
   ]
 }
